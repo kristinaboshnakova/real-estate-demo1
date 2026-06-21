@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="bg">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="HomePlace — недвижими имоти в България">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; frame-ancestors 'none'; form-action 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; connect-src 'self'; upgrade-insecure-requests">
+  <title>HomePlace — За нас</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+<header class="site-header" id="top">
+  <div class="container nav-wrap">
+    <a class="brand" href="index.html" aria-label="HomePlace начална страница">
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 42 42" width="42" height="42">
+          <path d="M4 20.5 21 6l17 14.5v17h-8.5V24h-17v13.5H4v-17Z" fill="none" stroke="currentColor" stroke-width="3" stroke-linejoin="round"/>
+          <path d="M13 37.5V20h16v17.5" fill="none" stroke="currentColor" stroke-width="3" stroke-linejoin="round"/>
+        </svg>
+      </span>
+
+      <span>
+        <strong>HomePlace</strong>
+        <small>недвижими имоти</small>
+      </span>
+    </a>
+
+    <button class="menu-toggle" id="menuOpen" type="button" aria-label="Отвори меню" aria-controls="mobileMenu" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav class="main-nav" aria-label="Главна навигация">
+      <a href="index.html">Начало</a>
+      <a href="imoti.html">Имоти</a>
+      <a href="uslugi.html">Услуги</a>
+      <a class="active" href="za-nas.html">За нас</a>
+      <a href="kontakti.html">Контакти</a>
+    </nav>
+
+    <div class="nav-actions">
+      <button class="ghost-btn" id="favoritesBtn" type="button">
+        ♡ Любими <b id="favCount">0</b>
+      </button>
+
+      <button class="primary-btn small" type="button" data-open-submit-property>
+        ＋ Добави имот
+      </button>
+    </div>
+  </div>
+
+  <div class="mobile-backdrop" id="mobileBackdrop" hidden></div>
+
+  <aside class="mobile-menu" id="mobileMenu" aria-hidden="true">
+    <div class="mobile-top">
+      <a class="brand" href="index.html">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 42 42" width="42" height="42">
+            <path d="M4 20.5 21 6l17 14.5v17h-8.5V24h-17v13.5H4v-17Z" fill="none" stroke="currentColor" stroke-width="3" stroke-linejoin="round"/>
+            <path d="M13 37.5V20h16v17.5" fill="none" stroke="currentColor" stroke-width="3" stroke-linejoin="round"/>
+          </svg>
+        </span>
+
+        <span>
+          <strong>HomePlace</strong>
+          <small>недвижими имоти</small>
+        </span>
+      </a>
+
+      <button class="menu-close" id="menuClose" type="button" aria-label="Затвори меню">
+        ×
+      </button>
+    </div>
+
+    <nav aria-label="Мобилна навигация">
+      <a href="index.html">Начало</a>
+      <a href="imoti.html">Имоти</a>
+      <a href="uslugi.html">Услуги</a>
+      <a class="active" href="za-nas.html">За нас</a>
+      <a href="kontakti.html">Контакти</a>
+
+      <button class="mobile-favorites-btn" id="mobileFavoritesBtn" type="button">
+        ♡ Любими <b id="mobileFavCount">0</b>
+      </button>
+
+      <button class="primary-btn" type="button" data-open-submit-property>
+        ＋ Добави имот
+      </button>
+    </nav>
+  </aside>
+</header>
+
+<main>
+  <section class="about-page-hero">
+    <div class="container">
+      <div class="hero-text">
+        <h1>За нас</h1>
+        <h2>Вашият надежден партньор в света на недвижимите имоти.</h2>
+        <p>HomePlace е създадена с мисията да направи покупката, продажбата и наемането на имот лесно, сигурно и приятно изживяване.</p>
+        <a class="primary-btn" href="kontakti.html">Свържете се с нас</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="container stats-grid">
+    <article>
+      <b>2 500+</b>
+      <span>Доволни клиенти</span>
+    </article>
+
+    <article>
+      <b>12+</b>
+      <span>Години опит</span>
+    </article>
+
+    <article>
+      <b>3 200+</b>
+      <span>Успешни сделки</span>
+    </article>
+
+    <article>
+      <b>15+</b>
+      <span>Града в България</span>
+    </article>
+  </section>
+
+  <section class="container values wide">
+    <h2>Нашите ценности</h2>
+
+    <article>
+      <span>♢</span>
+      <h3>Доверие</h3>
+      <p>Изграждаме дългосрочни отношения.</p>
+    </article>
+
+    <article>
+      <span>♙</span>
+      <h3>Професионализъм</h3>
+      <p>Високи стандарти и внимание към детайла.</p>
+    </article>
+
+    <article>
+      <span>🤝</span>
+      <h3>Коректност</h3>
+      <p>Ясни стъпки от консултация до финализиране.</p>
+    </article>
+
+    <article>
+      <span>⌖</span>
+      <h3>Локален опит</h3>
+      <p>Познаване на квартали, хора и тенденции.</p>
+    </article>
+  </section>
+
+  <section class="container page-section">
+    <div class="section-head">
+      <h2>Нашият екип</h2>
+      <a href="kontakti.html">Виж всички ›</a>
+    </div>
+
+    <div class="team-grid">
+      <article class="team-card">
+        <img src="assets/house-sofia.jpg" alt="Иван Петров">
+        <div>
+          <h3>Иван Петров</h3>
+          <strong>Управител</strong>
+          <p>Над 12 години опит в недвижимите имоти и управлението на сделки.</p>
+          <span>in</span>
+        </div>
+      </article>
+
+      <article class="team-card">
+        <img src="assets/apartment-burgas.jpg" alt="Мария Георгиева">
+        <div>
+          <h3>Мария Георгиева</h3>
+          <strong>Старши консултант</strong>
+          <p>Специалист в продажбите и отдаването под наем.</p>
+          <span>in</span>
+        </div>
+      </article>
+
+      <article class="team-card">
+        <img src="assets/apartment-plovdiv.jpg" alt="Георги Димитров">
+        <div>
+          <h3>Георги Димитров</h3>
+          <strong>Консултант</strong>
+          <p>Фокус върху жилищни имоти и инвестиционни възможности.</p>
+          <span>in</span>
+        </div>
+      </article>
+
+      <article class="team-card">
+        <img src="assets/apartment-varna.jpg" alt="Елица Стоянова">
+        <div>
+          <h3>Елица Стоянова</h3>
+          <strong>Маркетинг мениджър</strong>
+          <p>Отговаря за дигиталното присъствие и комуникацията с клиенти.</p>
+          <span>in</span>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="container mission">
+    <blockquote>“</blockquote>
+
+    <div>
+      <h2>Нашата мисия</h2>
+      <p>Да предоставяме най-добрите решения в недвижимите имоти, като поставяме нуждите на клиента на първо място.</p>
+    </div>
+
+    <div class="testimonial">
+      <p>Благодарение на HomePlace намерихме идеалния дом за нашето семейство. Професионално отношение и бърза комуникация.</p>
+      <strong>Сем. Николови</strong>
+      <span>София</span>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <a class="brand footer-brand" href="index.html">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 42 42" width="42" height="42">
+            <path d="M4 20.5 21 6l17 14.5v17h-8.5V24h-17v13.5H4v-17Z" fill="none" stroke="currentColor" stroke-width="3" stroke-linejoin="round"/>
+            <path d="M13 37.5V20h16v17.5" fill="none" stroke="currentColor" stroke-width="3" stroke-linejoin="round"/>
+          </svg>
+        </span>
+
+        <span>
+          <strong>HomePlace</strong>
+          <small>недвижими имоти</small>
+        </span>
+      </a>
+
+      <p>Статичен портфолио сайт за недвижими имоти — без бекенд, без ключове, готов за GitHub Pages.</p>
+    </div>
+
+    <div>
+      <h4>Навигация</h4>
+      <a href="imoti.html">Имоти</a>
+      <a href="uslugi.html">Услуги</a>
+      <a href="za-nas.html">За нас</a>
+      <a href="kontakti.html">Контакти</a>
+    </div>
+
+    <div>
+      <h4>Контакти</h4>
+      <p>office@homeplace.bg<br>08 XXX XXX XXX<br>София, България</p>
+    </div>
+  </div>
+  <div class="demo-disclaimer">
+    <div class="container">
+      Проектна демонстрация на уеб платформа за недвижими имоти, разработена за представяне на концепция, дизайн и функционалност.
+    </div>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>

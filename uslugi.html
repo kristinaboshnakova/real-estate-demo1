@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="bg">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="HomePlace — недвижими имоти в България">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; frame-ancestors 'none'; form-action 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; connect-src 'self'; upgrade-insecure-requests">
+  <title>HomePlace — Услуги</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+<header class="site-header" id="top">
+  <div class="container nav-wrap">
+    <a class="brand" href="index.html" aria-label="HomePlace начална страница">
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 42 42" width="42" height="42">
+          <path d="M4 20.5 21 6l17 14.5v17h-8.5V24h-17v13.5H4v-17Z" fill="none" stroke="currentColor" stroke-width="3" stroke-linejoin="round"/>
+          <path d="M13 37.5V20h16v17.5" fill="none" stroke="currentColor" stroke-width="3" stroke-linejoin="round"/>
+        </svg>
+      </span>
+
+      <span>
+        <strong>HomePlace</strong>
+        <small>недвижими имоти</small>
+      </span>
+    </a>
+
+    <button class="menu-toggle" id="menuOpen" type="button" aria-label="Отвори меню" aria-controls="mobileMenu" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav class="main-nav" aria-label="Главна навигация">
+      <a href="index.html">Начало</a>
+      <a href="imoti.html">Имоти</a>
+      <a class="active" href="uslugi.html">Услуги</a>
+      <a href="za-nas.html">За нас</a>
+      <a href="kontakti.html">Контакти</a>
+    </nav>
+
+    <div class="nav-actions">
+      <button class="ghost-btn" id="favoritesBtn" type="button">
+        ♡ Любими <b id="favCount">0</b>
+      </button>
+
+      <button class="primary-btn small" type="button" data-open-submit-property>
+        ＋ Добави имот
+      </button>
+    </div>
+  </div>
+
+  <div class="mobile-backdrop" id="mobileBackdrop" hidden></div>
+
+  <aside class="mobile-menu" id="mobileMenu" aria-hidden="true">
+    <div class="mobile-top">
+      <a class="brand" href="index.html">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 42 42" width="42" height="42">
+            <path d="M4 20.5 21 6l17 14.5v17h-8.5V24h-17v13.5H4v-17Z" fill="none" stroke="currentColor" stroke-width="3" stroke-linejoin="round"/>
+            <path d="M13 37.5V20h16v17.5" fill="none" stroke="currentColor" stroke-width="3" stroke-linejoin="round"/>
+          </svg>
+        </span>
+
+        <span>
+          <strong>HomePlace</strong>
+          <small>недвижими имоти</small>
+        </span>
+      </a>
+
+      <button class="menu-close" id="menuClose" type="button" aria-label="Затвори меню">
+        ×
+      </button>
+    </div>
+
+    <nav aria-label="Мобилна навигация">
+      <a href="index.html">Начало</a>
+      <a href="imoti.html">Имоти</a>
+      <a class="active" href="uslugi.html">Услуги</a>
+      <a href="za-nas.html">За нас</a>
+      <a href="kontakti.html">Контакти</a>
+
+      <button class="mobile-favorites-btn" id="mobileFavoritesBtn" type="button">
+        ♡ Любими <b id="mobileFavCount">0</b>
+      </button>
+
+      <button class="primary-btn" type="button" data-open-submit-property>
+        ＋ Добави имот
+      </button>
+    </nav>
+  </aside>
+</header>
+
+<main>
+  <section class="hero services-hero">
+    <div class="hero-bg"></div>
+    <div class="hero-overlay"></div>
+
+    <div class="container hero-content">
+      <h1>Услуги</h1>
+      <p>Предлагаме пълен набор от професионални услуги в сферата на недвижимите имоти.</p>
+      <a class="primary-btn" href="kontakti.html">Свържете се с консултант</a>
+    </div>
+  </section>
+
+  <section class="container page-section">
+    <h2>Нашите услуги</h2>
+
+    <div class="service-grid">
+      <article class="service-card">
+        <span>⌂</span>
+        <h3>Покупка на имот</h3>
+        <p>Ще ви помогнем да намерите точния имот, който отговаря на вашите нужди и бюджет.</p>
+        <a href="service-pokupka.html">Научи повече </a>
+      </article>
+
+      <article class="service-card">
+        <span>▣</span>
+        <h3>Продажба на имот</h3>
+        <p>Професионална оценка, ефективен маркетинг и представяне пред подходящи купувачи.</p>
+        <a href="service-prodazhba.html">Научи повече </a>
+      </article>
+
+      <article class="service-card">
+        <span>⚿</span>
+        <h3>Отдаване под наем</h3>
+        <p>Намираме надеждни наематели и се грижим за целия процес — бързо и сигурно.</p>
+        <a href="service-naem.html">Научи повече </a>
+      </article>
+
+      <article class="service-card">
+        <span>▥</span>
+        <h3>Оценка на имот</h3>
+        <p>Професионална пазарна оценка на база реални данни и текущи тенденции.</p>
+        <a href="service-ocenka.html">Научи повече </a>
+      </article>
+
+      <article class="service-card">
+        <span>⚖</span>
+        <h3>Правна консултация</h3>
+        <p>Осигуряваме правна сигурност на всяка сделка и съдействие при документи.</p>
+        <a href="service-pravna-konsultacia.html">Научи повече </a>
+      </article>
+
+      <article class="service-card">
+        <span>%</span>
+        <h3>Ипотечно съдействие</h3>
+        <p>Съдействаме при избор на най-доброто ипотечно решение с водещи банки.</p>
+        <a href="service-ipoteka.html">Научи повече </a>
+      </article>
+
+      <article class="service-card">
+        <span>▦</span>
+        <h3>Управление на имоти</h3>
+        <p>Цялостно управление — поддръжка, наематели, отчети и оптимизация.</p>
+        <a href="service-upravlenie.html">Научи повече </a>
+      </article>
+    </div>
+  </section>
+
+  <section class="container process">
+    <div>
+      <h2>Как работим</h2>
+      <p>Следваме ясен и доказан процес, който гарантира сигурност, прозрачност и отличен резултат.</p>
+    </div>
+
+    <ol>
+      <li>
+        <b>1</b>
+        <h3>Консултация</h3>
+        <p>Запознаваме се с вашите нужди.</p>
+      </li>
+
+      <li>
+        <b>2</b>
+        <h3>План и стратегия</h3>
+        <p>Подготвяме оптимален план.</p>
+      </li>
+
+      <li>
+        <b>3</b>
+        <h3>Реализация</h3>
+        <p>Действаме информирано на всяка фаза.</p>
+      </li>
+
+      <li>
+        <b>4</b>
+        <h3>Успешна сделка</h3>
+        <p>Финализираме с детайлна грижа.</p>
+      </li>
+    </ol>
+  </section>
+
+  <section class="container cta-split">
+    <img src="assets/apartment-sofia2.jpg" alt="Модерен хол">
+
+    <div>
+      <span>Готови ли сте?</span>
+      <h2>Свържете се с консултант</h2>
+      <p>Нашите експерти са тук, за да отговорят на вашите въпроси.</p>
+      <a class="primary-btn light" href="kontakti.html">Свържете се с нас →</a>
+    </div>
+  </section>
+
+  <section class="container values">
+    <article>
+      <span>♢</span>
+      <h3>Сигурност</h3>
+      <p>Всички имоти са проверени и с гарантиран произход.</p>
+    </article>
+
+    <article>
+      <span>🤝</span>
+      <h3>Коректност</h3>
+      <p>Работим прозрачно и винаги в интерес на клиента.</p>
+    </article>
+
+    <article>
+      <span>◷</span>
+      <h3>Бърза услуга</h3>
+      <p>Спестете време с нашата ефективна система.</p>
+    </article>
+
+    <article>
+      <span>♙</span>
+      <h3>Професионализъм</h3>
+      <p>Екип от експерти с дългогодишен опит на пазара.</p>
+    </article>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <a class="brand footer-brand" href="index.html">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 42 42" width="42" height="42">
+            <path d="M4 20.5 21 6l17 14.5v17h-8.5V24h-17v13.5H4v-17Z" fill="none" stroke="currentColor" stroke-width="3" stroke-linejoin="round"/>
+            <path d="M13 37.5V20h16v17.5" fill="none" stroke="currentColor" stroke-width="3" stroke-linejoin="round"/>
+          </svg>
+        </span>
+
+        <span>
+          <strong>HomePlace</strong>
+          <small>недвижими имоти</small>
+        </span>
+      </a>
+
+      <p>Статичен портфолио сайт за недвижими имоти — без бекенд, без ключове, готов за GitHub Pages.</p>
+    </div>
+
+    <div>
+      <h4>Навигация</h4>
+      <a href="imoti.html">Имоти</a>
+      <a href="uslugi.html">Услуги</a>
+      <a href="za-nas.html">За нас</a>
+      <a href="kontakti.html">Контакти</a>
+    </div>
+
+    <div>
+      <h4>Контакти</h4>
+      <p>office@homeplace.bg<br>+359 88X XXX XXX<br>София, България</p>
+    </div>
+  </div>
+  <div class="demo-disclaimer">
+    <div class="container">
+      Проектна демонстрация на уеб платформа за недвижими имоти, разработена за представяне на концепция, дизайн и функционалност.
+    </div>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>

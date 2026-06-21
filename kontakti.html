@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="bg">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="HomePlace — недвижими имоти в България">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; frame-ancestors 'none'; form-action 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; connect-src 'self'; upgrade-insecure-requests">
+  <title>HomePlace — Контакти</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+<header class="site-header" id="top">
+  <div class="container nav-wrap">
+    <a class="brand" href="index.html" aria-label="HomePlace начална страница">
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 42 42" width="42" height="42">
+          <path d="M4 20.5 21 6l17 14.5v17h-8.5V24h-17v13.5H4v-17Z" fill="none" stroke="currentColor" stroke-width="3" stroke-linejoin="round"/>
+          <path d="M13 37.5V20h16v17.5" fill="none" stroke="currentColor" stroke-width="3" stroke-linejoin="round"/>
+        </svg>
+      </span>
+
+      <span>
+        <strong>HomePlace</strong>
+        <small>недвижими имоти</small>
+      </span>
+    </a>
+
+    <button class="menu-toggle" id="menuOpen" type="button" aria-label="Отвори меню" aria-controls="mobileMenu" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav class="main-nav" aria-label="Главна навигация">
+      <a href="index.html">Начало</a>
+      <a href="imoti.html">Имоти</a>
+      <a href="uslugi.html">Услуги</a>
+      <a href="za-nas.html">За нас</a>
+      <a class="active" href="kontakti.html">Контакти</a>
+    </nav>
+
+    <div class="nav-actions">
+      <button class="ghost-btn" id="favoritesBtn" type="button">
+        ♡ Любими <b id="favCount">0</b>
+      </button>
+
+      <button class="primary-btn small" type="button" data-open-submit-property>
+        ＋ Добави имот
+      </button>
+    </div>
+  </div>
+
+  <div class="mobile-backdrop" id="mobileBackdrop" hidden></div>
+
+  <aside class="mobile-menu" id="mobileMenu" aria-hidden="true">
+    <div class="mobile-top">
+      <a class="brand" href="index.html">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 42 42" width="42" height="42">
+            <path d="M4 20.5 21 6l17 14.5v17h-8.5V24h-17v13.5H4v-17Z" fill="none" stroke="currentColor" stroke-width="3" stroke-linejoin="round"/>
+            <path d="M13 37.5V20h16v17.5" fill="none" stroke="currentColor" stroke-width="3" stroke-linejoin="round"/>
+          </svg>
+        </span>
+
+        <span>
+          <strong>HomePlace</strong>
+          <small>недвижими имоти</small>
+        </span>
+      </a>
+
+      <button class="menu-close" id="menuClose" type="button" aria-label="Затвори меню">
+        ×
+      </button>
+    </div>
+
+    <nav aria-label="Мобилна навигация">
+      <a href="index.html">Начало</a>
+      <a href="imoti.html">Имоти</a>
+      <a href="uslugi.html">Услуги</a>
+      <a href="za-nas.html">За нас</a>
+      <a class="active" href="kontakti.html">Контакти</a>
+
+      <button class="mobile-favorites-btn" id="mobileFavoritesBtn" type="button">
+        ♡ Любими <b id="mobileFavCount">0</b>
+      </button>
+
+      <button class="primary-btn" type="button" data-open-submit-property>
+        ＋ Добави имот
+      </button>
+    </nav>
+  </aside>
+</header>
+
+<main>
+  <section class="hero contact-hero">
+    <div class="hero-bg"></div>
+    <div class="hero-overlay"></div>
+
+    <div class="container hero-content">
+      <h1>Контакти</h1>
+      <p>Свържете се с нас — ние сме тук, за да ви помогнем да откриете своя нов дом.</p>
+    </div>
+  </section>
+
+  <section class="container contact-panel">
+    <form class="contact-form" id="contactForm">
+      <h2>Изпратете ни съобщение</h2>
+      <p>Попълнете формата и наш консултант ще се свърже с вас възможно най-скоро.</p>
+
+      <input required name="name" placeholder="Име">
+      <input required type="email" name="email" placeholder="Имейл">
+      <input required name="phone" placeholder="Телефон">
+      <textarea required name="message" placeholder="Съобщение"></textarea>
+
+      <label class="check">
+        <input required type="checkbox">
+        Съгласявам се данните ми да бъдат използвани за обратна връзка.
+      </label>
+
+      <button class="primary-btn full" type="submit">
+        ✈ Изпрати запитване
+      </button>
+
+      <p class="form-note" id="formNote" hidden>
+        Благодарим! Формата е демо и не изпраща данни към сървър.
+      </p>
+    </form>
+
+    <aside class="contact-info">
+      <h2>Данни за контакт</h2>
+
+      <article>
+        <span>⌖</span>
+        <div>
+          <h3>Адрес</h3>
+          <p>ул. „Цар Освободител“<br>1000 София, България</p>
+        </div>
+      </article>
+
+      <article>
+        <span>☏</span>
+        <div>
+          <h3>Телефон</h3>
+          <p>08 XXX XXX XXX<br>08 XXX XXX XXX</p>
+        </div>
+      </article>
+
+      <article>
+        <span>✉</span>
+        <div>
+          <h3>Имейл</h3>
+          <p>office@homeplace.bg<br>info@homeplace.bg</p>
+        </div>
+      </article>
+
+      <article>
+        <span>◷</span>
+        <div>
+          <h3>Работно време</h3>
+          <p>Понеделник – Петък: 09:00 – 18:00<br>Събота: 10:00 – 14:00</p>
+        </div>
+      </article>
+    </aside>
+  </section>
+
+  <section class="container office-card-simple">
+    <div>
+      <h2>Посетете нашия офис</h2>
+      <p>Заповядайте в офиса ни в центъра на София. Ще се радваме да се срещнем с вас и да обсъдим вашите имотни цели.</p>
+
+      <ul>
+        <li>Лесен достъп с градски транспорт</li>
+        <li>В близост до метростанция</li>
+        <li>Възможност за предварително записване на час</li>
+      </ul>
+    </div>
+
+    <a class="primary-btn" href="kontakti.html">
+      ☎ Обадете ни се
+    </a>
+  </section>
+
+  <section class="container support-strip">
+    <div>
+      <span>☏</span>
+      <h2>Нуждаете се от съдействие?</h2>
+      <p>Нашият екип е на разположение да отговори на вашите въпроси.</p>
+    </div>
+
+    <a class="primary-btn" href="kontakti.html">
+      Обадете ни се сега
+    </a>
+  </section>
+
+  <section class="container values">
+    <article>
+      <span>♢</span>
+      <h3>Сигурност</h3>
+      <p>Всички имоти са проверени и с гарантиран произход.</p>
+    </article>
+
+    <article>
+      <span>🤝</span>
+      <h3>Коректност</h3>
+      <p>Работим прозрачно и винаги в интерес на клиента.</p>
+    </article>
+
+    <article>
+      <span>◷</span>
+      <h3>Бърза услуга</h3>
+      <p>Спестете време с нашата ефективна система.</p>
+    </article>
+
+    <article>
+      <span>♙</span>
+      <h3>Професионализъм</h3>
+      <p>Екип от експерти с дългогодишен опит на пазара.</p>
+    </article>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <a class="brand footer-brand" href="index.html">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 42 42" width="42" height="42">
+            <path d="M4 20.5 21 6l17 14.5v17h-8.5V24h-17v13.5H4v-17Z" fill="none" stroke="currentColor" stroke-width="3" stroke-linejoin="round"/>
+            <path d="M13 37.5V20h16v17.5" fill="none" stroke="currentColor" stroke-width="3" stroke-linejoin="round"/>
+          </svg>
+        </span>
+
+        <span>
+          <strong>HomePlace</strong>
+          <small>недвижими имоти</small>
+        </span>
+      </a>
+
+      <p>Статичен портфолио сайт за недвижими имоти — без бекенд, без ключове, готов за GitHub Pages.</p>
+    </div>
+
+    <div>
+      <h4>Навигация</h4>
+      <a href="imoti.html">Имоти</a>
+      <a href="uslugi.html">Услуги</a>
+      <a href="za-nas.html">За нас</a>
+      <a href="kontakti.html">Контакти</a>
+    </div>
+
+    <div>
+      <h4>Контакти</h4>
+      <p>office@homeplace.bg<br>08 XXX XXX XXX<br>София, България</p>
+    </div>
+  </div>
+  <div class="demo-disclaimer">
+    <div class="container">
+      Проектна демонстрация на уеб платформа за недвижими имоти, разработена за представяне на концепция, дизайн и функционалност.
+    </div>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
